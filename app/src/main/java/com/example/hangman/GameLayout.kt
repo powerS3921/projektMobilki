@@ -9,7 +9,6 @@ import androidx.constraintlayout.widget.ConstraintLayout
 
 class GameLayout : AppCompatActivity() {
 
-//    private val GameManager = GameManager()
 
     private lateinit var wordView: TextView
     private lateinit var usedLetterView: TextView
