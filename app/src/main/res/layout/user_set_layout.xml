@@ -36,7 +36,7 @@
         android:id="@+id/buttonUserSet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="212dp"
         android:background="@color/purple_500"
         android:paddingLeft="100dp"
         android:paddingTop="20dp"
