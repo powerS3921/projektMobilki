@@ -1,23 +1,29 @@
 package com.example.hangman
 
-import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
+import android.provider.MediaStore
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 
-class userSet : AppCompatActivity(){
-    private lateinit var textUserSet: TextView
-    private lateinit var userName : EditText
-    private lateinit var buttonUserSet: Button
+class userSet : AppCompatActivity() {
 
-    @SuppressLint("MissingInflatedId")
+    private lateinit var userName: EditText
+    private lateinit var selectImageButton: Button
+    private lateinit var submitButton: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.user_set_layout)
-        textUserSet = findViewById(R.id.textUserSet)
+
         userName = findViewById(R.id.userName)
-        buttonUserSet = findViewById(R.id.buttonUserSet)
-    }
+        selectImageButton = findViewById(R.id.selectImageButton)
+        submitButton = findViewById(R.id.buttonUserSet)
+        }
+
+
 }

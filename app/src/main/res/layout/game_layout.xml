@@ -13,9 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@color/purple_500"
-        android:text="Wróć"
+        android:text="@string/buttonPrevious"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="26dp" />
@@ -28,16 +28,18 @@
         android:src="@drawable/game10"
         app:layout_constraintTop_toBottomOf="@id/buttonPrevious"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="0dp"
+        android:contentDescription="@string/app_name"
+        />
 
     <TextView
         android:id="@+id/lostGameView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="You lost!"
+        android:text="@string/lost"
         android:textColor="#ff0000"
-        android:textSize="45dp"
+        android:textSize="45sp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="117dp"
@@ -55,9 +57,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="You won!"
+        android:text="@string/won"
         android:textColor="#00ff00"
-        android:textSize="45dp"
+        android:textSize="45sp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="117dp"
@@ -105,7 +107,7 @@
         tools:ignore="MissingConstraints"
         android:layout_marginTop="32dp"
         android:padding="15dp"
-        android:text="Start New Game"
+        android:text="@string/newGame"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lettersToUse"
@@ -122,7 +124,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="16dp"
-            app:constraint_referenced_ids="a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, r, s, t, u, w, z"
+            app:constraint_referenced_ids="a, ą, b, c, ć, d, e, ę, f, g, h, i, j, k, l, ł, m, n, o, ó, p, r, s, ś, t, u, w, y, z, ź, ż"
             app:flow_wrapMode="chain"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="0dp" />
@@ -133,9 +135,20 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="A"
+            android:text="@string/a"
             android:textColor="@color/black"
-            android:textSize="24dp" />
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/ą"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingHorizontal="10dp"
+            android:text="@string/ą"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/b"
@@ -143,9 +156,9 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="B"
+            android:text="@string/b"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints" />
 
         <TextView
@@ -154,9 +167,20 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="C"
+            android:text="@string/c"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/ć"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingHorizontal="10dp"
+            android:text="@string/ć"
+            android:textColor="@color/black"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints"/>
 
         <TextView
@@ -165,9 +189,9 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="D"
+            android:text="@string/d"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints"/>
 
         <TextView
@@ -176,9 +200,20 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="E"
+            android:text="@string/e"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/ę"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingHorizontal="10dp"
+            android:text="@string/ę"
+            android:textColor="@color/black"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints"/>
 
         <TextView
@@ -187,9 +222,9 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="F"
+            android:text="@string/f"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints"/>
 
         <TextView
@@ -198,9 +233,9 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="G"
+            android:text="@string/g"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints"/>
 
         <TextView
@@ -209,9 +244,9 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="H"
+            android:text="@string/h"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints"/>
 
         <TextView
@@ -220,9 +255,9 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="I"
+            android:text="@string/i"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints"/>
 
         <TextView
@@ -231,9 +266,9 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="J"
+            android:text="@string/j"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints"/>
 
         <TextView
@@ -242,9 +277,9 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="K"
+            android:text="@string/k"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints"/>
 
         <TextView
@@ -253,9 +288,20 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="L"
+            android:text="@string/l"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/ł"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingHorizontal="10dp"
+            android:text="@string/ł"
+            android:textColor="@color/black"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints"/>
 
         <TextView
@@ -264,9 +310,9 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="M"
+            android:text="@string/m"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints"/>
 
         <TextView
@@ -275,9 +321,9 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="N"
+            android:text="@string/n"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints"/>
 
         <TextView
@@ -286,9 +332,20 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="O"
+            android:text="@string/o"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/ó"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingHorizontal="10dp"
+            android:text="@string/ó"
+            android:textColor="@color/black"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints"/>
 
         <TextView
@@ -297,9 +354,9 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="P"
+            android:text="@string/p"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints"/>
 
         <TextView
@@ -308,9 +365,9 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="R"
+            android:text="@string/r"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints"/>
 
         <TextView
@@ -319,9 +376,20 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="S"
+            android:text="@string/s"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/ś"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingHorizontal="10dp"
+            android:text="@string/ś"
+            android:textColor="@color/black"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints"/>
 
         <TextView
@@ -330,9 +398,9 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="T"
+            android:text="@string/t"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints"/>
 
         <TextView
@@ -341,9 +409,9 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="U"
+            android:text="@string/u"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints"/>
 
 
@@ -353,9 +421,20 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="W"
+            android:text="@string/w"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingHorizontal="10dp"
+            android:text="@string/y"
+            android:textColor="@color/black"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints"/>
 
         <TextView
@@ -364,9 +443,31 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:paddingHorizontal="10dp"
-            android:text="Z"
+            android:text="@string/z"
             android:textColor="@color/black"
-            android:textSize="24dp"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/ź"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingHorizontal="10dp"
+            android:text="@string/ź"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/ż"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingHorizontal="10dp"
+            android:text="@string/ż"
+            android:textColor="@color/black"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
